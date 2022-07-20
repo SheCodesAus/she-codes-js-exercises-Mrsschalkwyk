@@ -25,7 +25,7 @@ function addItem() {
 
 function clearItems(){
     // make shoppingListItems empty
-    let  = document.getElementById('shoppingListItems')
+    let  = document.getElementById('shoppingListItems').innerHTML = ""
 
     // run updateItems()
     updateItems()
@@ -54,3 +54,28 @@ function updateItems() {
 // newListItem.innerText = newShoppingItem
 
 // console.log ("New List Item")
+
+//TEACHER NOTES
+// function addItem() {
+//     /*
+//       1. Get the value of the input with the id of new-item-text
+//       2. Create a list item with the value
+//       3. call appendChild on the shopping list to add the list item
+//     */
+  
+//     // 1. Get the value of the input with the id of new-item-text
+//     let inputField = document.getElementById('new-item-text')
+  
+//     // 2. Create a list item with the value
+//     // This is 'pesto'
+//     let newShoppingItem = inputField.value
+  
+//     // This is <li></li>
+//     let newListItem = document.createElement('li')
+  
+//     // This is <li>pesto</li>
+//     newListItem.innerText = newShoppingItem
+  
+//     // 3. call appendChild on the shopping list to add the list item
+//     shoppingList.appendChild(newListItem)
+//   }
